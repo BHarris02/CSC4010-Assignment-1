@@ -1,0 +1,11 @@
+**,Market,2
+**,Steppe,0
+**,resent,157
+**,attain,8
+**,Mentor,0
+**,Father,4
+**,Mother,0
+**,breaks,2
+**,fridge,0
+**,parent,24
+
