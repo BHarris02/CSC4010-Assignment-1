@@ -22,10 +22,10 @@ plt.plot(threads, speedup_a_kmp_full_pattern2, marker='o', label="Method A KMP-F
 plt.xlabel("Number of Threads")
 plt.ylabel("Speedup")
 plt.xticks(threads)
-plt.title("Speedup for Method A on 1MB Dataset")
+plt.title("Speedup for Method A on 100MB Dataset")
 plt.legend()
 plt.grid(True)
-plt.savefig("speedup_method_a_1mb.png")
+plt.savefig("speedup_method_a_100mb.png")
 plt.show()
 
 # Plot for Method B
@@ -37,8 +37,8 @@ plt.plot(threads, speedup_b_kmp_full_pattern2, marker='o', label="Method B KMP-F
 plt.xlabel("Number of Threads")
 plt.ylabel("Speedup")
 plt.xticks(threads)
-plt.title("Speedup for Method B on 1MB Dataset")
+plt.title("Speedup for Method B on 100MB Dataset")
 plt.legend()
 plt.grid(True)
-plt.savefig("speedup_method_b_1mb.png")
+plt.savefig("speedup_method_b_100mb.png")
 plt.show()
