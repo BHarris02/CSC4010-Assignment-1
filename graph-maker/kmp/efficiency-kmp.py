@@ -2,36 +2,36 @@ import matplotlib.pyplot as plt
 # For each method and pattern combination, insert values in the specified order
 
 # Method A, KMP-Informed
-efficiency_a_kmp_informed_pattern1_1mb = [100, 50, 25, 12.5, 4.69]  # data1-1mb + pattern1
-efficiency_a_kmp_informed_pattern1_100mb = [94.25, 50, 27.42, 15.95, 4.63]  # data1-100mb + pattern1
-efficiency_a_kmp_informed_pattern2_1mb = [100, 50, 25, 12.5, 6.25]  # data1-1mb + pattern2
-efficiency_a_kmp_informed_pattern2_100mb = [90.73, 50.21, 25.77, 12.83, 6.02]  # data1-100mb + pattern2
-efficiency_a_kmp_informed_pattern1_1gb = [60.91, 41.96, 18.2, 8.24, 4.56]  # data-1gb + pattern1
-efficiency_a_kmp_informed_pattern2_1gb = [87.22, 43.42, 22.83, 11.26, 5.96]  # data-1gb + pattern 2
+efficiency_a_kmp_informed_pattern1_1mb = [1.00,0.50,0.25,0.13,0.05]  # data1-1mb + pattern1
+efficiency_a_kmp_informed_pattern1_100mb = [1.00,0.53,0.29,0.17,0.05]  # data1-100mb + pattern1
+efficiency_a_kmp_informed_pattern2_1mb = [1.00,0.50,0.25,0.13,0.06]  # data1-1mb + pattern2
+efficiency_a_kmp_informed_pattern2_100mb = [1.00,0.55,0.28,0.14,0.07]  # data1-100mb + pattern2
+efficiency_a_kmp_informed_pattern1_1gb = [1.00,0.69,0.30,0.14,0.07]  # data-1gb + pattern1
+efficiency_a_kmp_informed_pattern2_1gb = [1.00,0.50,0.26,0.13,0.07]  # data-1gb + pattern 2
 
 # Method A, KMP-Full
-efficiency_a_kmp_full_pattern1_1mb = [60, 25, 25, 9.37, 2.34]  # data1-1mb + pattern1
-efficiency_a_kmp_full_pattern1_100mb = [65.34, 33.54, 53.59, 40.59, 25.95]  # data1-100mb + pattern1
-efficiency_a_kmp_full_pattern2_1mb = [22.22, 16.67, 6.25, 8.33, 2.5]  # data1-1mb + pattern2
-efficiency_a_kmp_full_pattern2_100mb = [64.92, 44.01, 38.91, 45.9, 19.58]  # data1-100mb + pattern2
-efficiency_a_kmp_full_pattern1_1gb = [59.61, 57.35, 45.33, 16.62, 10.46]  # data-1gb + pattern1
-efficiency_a_kmp_full_pattern2_1gb = [61.45, 51.39, 26.84, 35.39, 23.31]  # data-1gb + pattern 2
+efficiency_a_kmp_full_pattern1_1mb = [1.00,1.50,0.75,0.19,0.02]  # data1-1mb + pattern1
+efficiency_a_kmp_full_pattern1_100mb = [1.00,1.03,0.88,0.40,0.34]  # data1-100mb + pattern1
+efficiency_a_kmp_full_pattern2_1mb = [1.00,1.00,0.50,0.06,0.02]  # data1-1mb + pattern2
+efficiency_a_kmp_full_pattern2_100mb = [1.00,0.99,0.91,0.56,0.33]  # data1-100mb + pattern2
+efficiency_a_kmp_full_pattern1_1gb = [1.00,0.93,0.78,0.41,0.17]  # data-1gb + pattern1
+efficiency_a_kmp_full_pattern2_1gb = [1.00,0.84,0.76,0.51,0.35]  # data-1gb + pattern 2
 
 # Method B, KMP-Informed
-efficiency_b_kmp_informed_pattern1_1mb = [100, 150, 75, 18.75, 2.08]  # data1-1mb + pattern1
-efficiency_b_kmp_informed_pattern1_100mb = [95.94, 99.10, 84.44, 38.67, 32.32]  # data1-100mb + pattern1
-efficiency_b_kmp_informed_pattern2_1mb = [100, 100, 50, 6.25, 1.78]  # data1-1mb + pattern2
-efficiency_b_kmp_informed_pattern2_100mb = [90.55, 89.84, 82.14, 50.43, 29.95]  # data1-100mb + pattern2
-efficiency_b_kmp_informed_pattern1_1gb = [89.53, 83.01, 69.92, 36.41, 14.90]  # data-1gb + pattern1
-efficiency_b_kmp_informed_pattern2_1gb = [87.99, 74.32, 67.2, 44.45, 30.50]  # data-1gb + pattern 2
+efficiency_b_kmp_informed_pattern1_1mb = [1.00,0.42,0.42,0.16,0.04]  # data1-1mb + pattern1
+efficiency_b_kmp_informed_pattern1_100mb = [1.00,0.51,0.82,0.62,0.40]  # data1-100mb + pattern1
+efficiency_b_kmp_informed_pattern2_1mb = [1.00,0.75,0.28,0.38,0.11]  # data1-1mb + pattern2
+efficiency_b_kmp_informed_pattern2_100mb = [1.00,0.68,0.60,0.71,0.30]  # data1-100mb + pattern2
+efficiency_b_kmp_informed_pattern1_1gb = [1.00,0.96,0.76,0.28,0.18]  # data-1gb + pattern1
+efficiency_b_kmp_informed_pattern2_1gb = [1.00,0.84,0.44,0.58,0.38]  # data-1gb + pattern 2
 
 # Method B, KMP-Full
-efficiency_b_kmp_full_pattern1_1mb = [37.5, 25, 15, 9.37, 3.12]  # data1-1mb + pattern1
-efficiency_b_kmp_full_pattern1_100mb = [69.54, 49.25, 52.71, 44.5, 37.61]  # data1-100mb + pattern1
-efficiency_b_kmp_full_pattern2_1mb = [33.33, 25, 25, 8.33, 3.12]  # data1-1mb + pattern2
-efficiency_b_kmp_full_pattern2_100mb = [67.85, 56.93, 43.98, 44.92, 20.83]  # data1-100mb + pattern2
-efficiency_b_kmp_full_pattern1_1gb = [62.23, 61.19, 36.53, 30.47, 32.57]  # data-1gb + pattern1
-efficiency_b_kmp_full_pattern2_1gb = [63.43, 53.55, 30.42, 25.14, 25.66]  # data-1gb + pattern 2
+efficiency_b_kmp_full_pattern1_1mb = [1.00,0.67,0.40,0.25,0.08]  # data1-1mb + pattern1
+efficiency_b_kmp_full_pattern1_100mb = [1.00,0.71,0.76,0.64,0.54]  # data1-100mb + pattern1
+efficiency_b_kmp_full_pattern2_1mb = [1.00,0.75,0.75,0.25,0.09]  # data1-1mb + pattern2
+efficiency_b_kmp_full_pattern2_100mb = [1.00,0.84,0.65,0.66,0.31]  # data1-100mb + pattern2
+efficiency_b_kmp_full_pattern1_1gb = [1.00,0.98,0.59,0.49,0.52]  # data-1gb + pattern1
+efficiency_b_kmp_full_pattern2_1gb = [1.00,0.84,0.48,0.40,0.40]  # data-1gb + pattern 2
 
 # Thread counts for x-axis
 threads = [1, 2, 4, 8, 16]

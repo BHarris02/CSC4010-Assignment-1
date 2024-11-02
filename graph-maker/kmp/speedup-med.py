@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 # Thread counts
 threads = [1, 2, 4, 8, 16]
 
-speedup_a_kmp_informed_pattern1 = [0.94, 1, 1.1, 1.28, 0.74]  
-speedup_a_kmp_full_pattern1 = [0.65, 0.67, 2.14, 3.25, 4.15] 
-speedup_a_kmp_informed_pattern2 = [0.91, 1, 1.03, 1.03, 0.96]  
-speedup_a_kmp_full_pattern2 = [0.65, 0.88, 1.56, 3.67, 3.13]       
+speedup_a_kmp_informed_pattern1 = [1,1.06,1.16,1.35,0.79]  
+speedup_a_kmp_full_pattern1 = [1,2.07,3.52,3.22,5.39] 
+speedup_a_kmp_informed_pattern2 = [1,1.11,1.14,1.13,1.06]  
+speedup_a_kmp_full_pattern2 = [1,1.98,3.63,4.46,5.29]       
 
-speedup_b_kmp_informed_pattern1 = [0.96, 1.98, 3.38, 3.09, 5.17]  
-speedup_b_kmp_full_pattern1 = [0.69, 0.98, 2.11, 3.56, 6.02]   
-speedup_b_kmp_informed_pattern2 = [0.9, 1.8, 3.28, 4.03, 4.79]  
-speedup_b_kmp_full_pattern2 = [0.68, 1.14, 1.75, 3.59, 3.33]      
+speedup_b_kmp_informed_pattern1 = [1,1.03,3.28,4.97,6.35]  
+speedup_b_kmp_full_pattern1 = [1,1.42,3.03,5.12,8.65]   
+speedup_b_kmp_informed_pattern2 = [1,1.36,2.4,5.66,4.83]  
+speedup_b_kmp_full_pattern2 = [1,1.68,2.59,5.30,4.91]      
 
 # Plot for Method A
 plt.figure(figsize=(10, 6))

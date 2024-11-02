@@ -2,36 +2,36 @@ import matplotlib.pyplot as plt
 # For each method and pattern combination, insert values in the specified order
 
 # Method A, ac-Informed
-efficiency_a_ac_informed_pattern1_1mb = [23.08, 16.67, 750, 3.75, 6.25]  # data1-1mb + pattern1
-efficiency_a_ac_informed_pattern1_100mb = [4, 3.33, 3, 1.39, 1.10]  # data1-100mb + pattern1
-efficiency_a_ac_informed_pattern2_1mb = [75, 25, 750, 3.12, 6.25]  # data1-1mb + pattern2
-efficiency_a_ac_informed_pattern2_100mb = [3.57, 3.19, 3.26, 1.25, 1.10]  # data1-100mb + pattern2
-efficiency_a_ac_informed_pattern1_1gb = [0.10, 0.07, 0.04, 0.02, 0.01]  # data-1gb + pattern1
-efficiency_a_ac_informed_pattern2_1gb = [0.13, 0.12, 0.014, 0.10, 0.08]  # data-1gb + pattern 2
+efficiency_a_ac_informed_pattern1_1mb = [100, 72.22, 3250, 16.25, 27.08]
+efficiency_a_ac_informed_pattern1_100mb = [100, 83.33, 75, 34.72, 27.57]
+efficiency_a_ac_informed_pattern2_1mb = [100, 33.33, 1000, 4.16, 8.33]
+efficiency_a_ac_informed_pattern2_100mb = [100, 89.36, 91.30, 35, 30.88]
+efficiency_a_ac_informed_pattern1_1gb = [100, 65.96, 43.32, 25.66, 15.12]
+efficiency_a_ac_informed_pattern2_1gb = [100, 85.94, 101.55, 72.25, 60.16]
 
 # Method A, ac-Full
-efficiency_a_ac_full_pattern1_1mb = [100, 75, 5, 2.68, 1.44]  # data1-1mb + pattern1
-efficiency_a_ac_full_pattern1_100mb = [0.89, 0.97, 0.73, 0.48, 0.32]  # data1-100mb + pattern1
-efficiency_a_ac_full_pattern2_1mb = [150, 150, 9.37, 2.68, 1.56]  # data1-1mb + pattern2
-efficiency_a_ac_full_pattern2_100mb = [1.59, 1.31, 0.82, 0.65, 0.32]  # data1-100mb + pattern2
-efficiency_a_ac_full_pattern1_1gb = [0.46, 0.29, 0.28, 0.03, 0.02]  # data-1gb + pattern1
-efficiency_a_ac_full_pattern2_1gb = [0.44, 0.30, 0.27, 0.22, 0.12]  # data-1gb + pattern 2
+efficiency_a_ac_full_pattern1_1mb = [100, 75, 500, 2.67, 1.44]
+efficiency_a_ac_full_pattern1_100mb = [100, 110.85, 82.59, 54.00, 35.69]
+efficiency_a_ac_full_pattern2_1mb = [100, 100, 625, 1.78, 1.04]
+efficiency_a_ac_full_pattern2_100mb = [100, 82.45, 51.64, 40.51, 19.91]
+efficiency_a_ac_full_pattern1_1gb = [100, 62.69, 60.14, 7.19, 3.61]
+efficiency_a_ac_full_pattern2_1gb = [100, 69.63, 61.42, 51.80, 28.47]
 
 # Method B, ac-Informed
-efficiency_b_ac_informed_pattern1_1mb = [42.86, 21.43, 75, 4.17, 4.69]  # data1-1mb + pattern1
-efficiency_b_ac_informed_pattern1_100mb = [3.41, 1.70, 0.99, 0.37, 0.25]  # data1-100mb + pattern1
-efficiency_b_ac_informed_pattern2_1mb = [100, 30, 75, 5.38, 6.25]  # data1-1mb + pattern2
-efficiency_b_ac_informed_pattern2_100mb = [3.22, 1.58, 0.90, 0.38, 0.23]  # data1-100mb + pattern2
-efficiency_b_ac_informed_pattern1_1gb = [0.40, 0.20, 0.11, 0.06, 0.03]  # data-1gb + pattern1
-efficiency_b_ac_informed_pattern2_1gb = [0.37, 0.19, 0.11, 0.06, 0.03]  # data-1gb + pattern 2
+efficiency_b_ac_informed_pattern1_1mb = [100, 50, 175, 9.72, 10.93]
+efficiency_b_ac_informed_pattern1_100mb =  [100, 50, 27.84, 10.89, 7.23]
+efficiency_b_ac_informed_pattern2_1mb =  [100, 30, 75, 5.35, 6.25]
+efficiency_b_ac_informed_pattern2_100mb = [100, 48.94, 28.01, 11.86, 7.17]
+efficiency_b_ac_informed_pattern1_1gb =  [100, 50.74, 28.74, 14.46, 6.88]
+efficiency_b_ac_informed_pattern2_1gb = [100, 50.95, 28.96, 16.55, 7.03]
 
 # Method B, ac-Full
-efficiency_b_ac_full_pattern1_1mb = [3000, 150, 18.75, 3.75, 0.43]  # data1-1mb + pattern1
-efficiency_b_ac_full_pattern1_100mb = [4.69, 2.03, 0.83, 0.44, 0.26]  # data1-100mb + pattern1
-efficiency_b_ac_full_pattern2_1mb = [3000, 150, 12.5, 6.25, 3.125]  # data1-1mb + pattern2
-efficiency_b_ac_full_pattern2_100mb = [4.48, 1.78, 0.83, 0.42, 0.24]  # data1-100mb + pattern2
-efficiency_b_ac_full_pattern1_1gb = [0.39, 0.20, 0.11, 0.06, 0.03]  # data-1gb + pattern1
-efficiency_b_ac_full_pattern2_1gb = [0.37, 0.19, 0.10, 0.05, 0.03]  # data-1gb + pattern 2
+efficiency_b_ac_full_pattern1_1mb = [100, 5, 0.625, 0.125, 0.089]
+efficiency_b_ac_full_pattern1_100mb = [100, 43.24, 17.77, 9.30, 5.55]
+efficiency_b_ac_full_pattern2_1mb = [100, 5, 0.41, 0.20, 0.10]
+efficiency_b_ac_full_pattern2_100mb = [100, 39.88, 18.61, 9.41, 5.43]
+efficiency_b_ac_full_pattern1_1gb = [100, 50.59, 27.16, 14.33, 7.15]
+efficiency_b_ac_full_pattern2_1gb =  [100, 50.56, 26.83, 14.25, 7.06]
 
 # Thread counts for x-axis
 threads = [1, 2, 4, 8, 16]
@@ -45,6 +45,7 @@ def plot_parallel_efficiency(method, dataset_size, pattern1_informed, pattern1_f
     plt.plot(threads, pattern2_full, label=f'{method} ac-Full Pattern 2', marker='o')
     plt.xlabel('Number of Threads')
     plt.ylabel('Parallel Efficiency')
+    plt.xticks(threads)
     plt.title(f'Parallel Efficiency for {method} on {dataset_size} Dataset')
     plt.legend()
     plt.grid(True)

@@ -4,16 +4,16 @@ import matplotlib.pyplot as plt
 threads = [1, 2, 4, 8, 16]
 # Replace these lists with actual calculated Speedup values for Method A and Method B
 # Speedup values for Method A with ac-Informed and ac-Full on the 1MB dataset
-speedup_a_ac_informed = [0.23, 0.33, 30, 0.3, 1]  
-speedup_a_ac_full = [1, 1.5, 0.2, 0.21, 0.23]  
-speedup_a_ac_informed_pattern2 = [0.75, 0.5, 30, 0.25, 1]  
-speedup_a_ac_full_pattern2 = [1.5, 3, 0.37, 0.21, 0.25]      
+speedup_a_ac_informed = [100, 144.4444444, 13000, 130, 433.3333333]  
+speedup_a_ac_full = [100, 150, 20, 21.42857143, 23.07692308]  
+speedup_a_ac_informed_pattern2 = [100, 66.66666667, 4000, 33.33333333, 133.3333333]  
+speedup_a_ac_full_pattern2 = [100, 200, 25, 14.28571429, 16.66666667]     
 
 # Speedup values for Method B with ac-Informed and ac-Full on the 1MB dataset
-speedup_b_ac_informed = [0.43, 0.43, 3, 0.33, 0.75]  
-speedup_b_ac_full = [30, 3, 0.75, 0.3, 0.43]   
-speedup_b_ac_informed_pattern2 = [1, 0.6, 3, 0.43, 1]  
-speedup_b_ac_full_pattern2 = [30, 3, 0.5, 0.5, 0.5]    
+speedup_b_ac_informed = [100, 100, 700, 77.77777778, 175]  
+speedup_b_ac_full = [100, 10, 2.5, 1, 1.428571429] 
+speedup_b_ac_informed_pattern2 = [100, 60, 300, 42.85714286, 100] 
+speedup_b_ac_full_pattern2 = [100, 10, 1.666666667, 1.666666667, 1.666666667]   
 
 # Plot for Method A
 plt.figure(figsize=(10, 6))
