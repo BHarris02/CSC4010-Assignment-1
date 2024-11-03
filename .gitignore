@@ -2,3 +2,4 @@
 SourceText/
 ~$PerformanceMetrics.xlsx
 *.png
+correctness-checker/*.txt
