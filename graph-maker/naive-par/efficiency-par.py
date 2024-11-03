@@ -26,7 +26,7 @@ def plot_efficiency(dataset_size, dataset_patterns):
             speedup = [times[0] / t for t in times]  # Calculate speedup
             efficiency = [speedup[i] / threads[i] for i in range(len(threads))]  # Calculate efficiency
             plt.plot(threads, efficiency, label=f'{method} - {dataset_pattern}', marker='o')
-
+            
     plt.xlabel('Number of Threads')
     plt.ylabel('Parallel Efficiency')
     plt.title(f'Parallel Efficiency Comparison for {dataset_size.capitalize()} Dataset')
