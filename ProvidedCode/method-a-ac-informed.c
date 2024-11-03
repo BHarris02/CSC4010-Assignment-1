@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "search.h" // include the search library
-
+#include "search.h"
 #define ALPHABET_SIZE 256
 
 // Trie node structure for Aho-Corasick
@@ -35,7 +34,7 @@ void insertPattern(TrieNode* root, const char* pattern, int pattern_index) {
         }
         node = node->children[index];
     }
-    // Add the pattern index to the node where the pattern ends
+    // Add the pattern index to node where pattern ends
     node->pattern_count++;
     node->pattern_indices = (int*)realloc(node->pattern_indices, node->pattern_count * sizeof(int));
     node->pattern_indices[node->pattern_count - 1] = pattern_index;
@@ -46,7 +45,7 @@ void buildFailureLinks(TrieNode* root) {
     TrieNode** queue = (TrieNode**)malloc(ALPHABET_SIZE * sizeof(TrieNode*));
     int front = 0, rear = 0;
 
-    // Initialize failure links of root's children
+    // failure links
     for (int i = 0; i < ALPHABET_SIZE; i++) {
         if (root->children[i]) {
             root->children[i]->failure = root;
@@ -54,7 +53,7 @@ void buildFailureLinks(TrieNode* root) {
         }
     }
 
-    // BFS to set up failure links
+    // Set up failure links
     while (front < rear) {
         TrieNode* current = queue[front++];
         for (int i = 0; i < ALPHABET_SIZE; i++) {
@@ -76,7 +75,7 @@ void ahoCorasickSearch(TrieNode* root, char* line, long line_number, struct File
     for (long p = 0; p < patterns->lines; ++p) {
         long match_index = Search(line, strlen(line), patterns->data[p], strlen(patterns->data[p]), SEARCH_MODE_FIRST);
         
-        // If a match is found print the match
+        // If match found print match
         if (match_index >= 0) {
             printf("**,%s,%ld,%ld\n", patterns->data[p], line_number, match_index);
         }
@@ -114,8 +113,6 @@ int main(int ac, char** av) {
         ahoCorasickSearch(root, fd.data[l], l, &pat);
     }
 
-    // Free allocated resources
-    free(root);  // Ideally, a full recursive cleanup of Trie nodes should be implemented
-
+    free(root);  
     return 0;
 }

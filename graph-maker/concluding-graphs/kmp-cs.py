@@ -31,7 +31,7 @@ thread_counts = [1, 2, 4, 8, 16]
 
 # Method A, Pattern 1
 fig, ax = plt.subplots(figsize=(10, 6))
-ax.stkmpkplot(thread_counts, 
+ax.stackplot(thread_counts, 
              voluntary_switches_a_kmp_informed_pattern1, involuntary_switches_a_kmp_informed_pattern1,
              voluntary_switches_a_kmp_full_pattern1, involuntary_switches_a_kmp_full_pattern1,
              labels=['A Informed Voluntary', 'A Informed Involuntary', 'A Full Voluntary', 'A Full Involuntary'],
@@ -45,7 +45,7 @@ plt.show()
 
 # Method A, Pattern 2
 fig, ax = plt.subplots(figsize=(10, 6))
-ax.stkmpkplot(thread_counts, 
+ax.stackplot(thread_counts, 
              voluntary_switches_a_kmp_informed_pattern2, involuntary_switches_a_kmp_informed_pattern2,
              voluntary_switches_a_kmp_full_pattern2, involuntary_switches_a_kmp_full_pattern2,
              labels=['A Informed Voluntary', 'A Informed Involuntary', 'A Full Voluntary', 'A Full Involuntary'],
@@ -59,7 +59,7 @@ plt.show()
 
 # Method B, Pattern 1
 fig, ax = plt.subplots(figsize=(10, 6))
-ax.stkmpkplot(thread_counts, 
+ax.stackplot(thread_counts, 
              voluntary_switches_b_kmp_informed_pattern1, involuntary_switches_b_kmp_informed_pattern1,
              voluntary_switches_b_kmp_full_pattern1, involuntary_switches_b_kmp_full_pattern1,
              labels=['B Informed Voluntary', 'B Informed Involuntary', 'B Full Voluntary', 'B Full Involuntary'],
@@ -73,7 +73,7 @@ plt.show()
 
 # Method B, Pattern 2
 fig, ax = plt.subplots(figsize=(10, 6))
-ax.stkmpkplot(thread_counts, 
+ax.stackplot(thread_counts, 
              voluntary_switches_b_kmp_informed_pattern2, involuntary_switches_b_kmp_informed_pattern2,
              voluntary_switches_b_kmp_full_pattern2, involuntary_switches_b_kmp_full_pattern2,
              labels=['B Informed Voluntary', 'B Informed Involuntary', 'B Full Voluntary', 'B Full Involuntary'],

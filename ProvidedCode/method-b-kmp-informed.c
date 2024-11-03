@@ -1,27 +1,12 @@
-/**
- * Method B
- * 
- * Load the source file into a single char array (one line)
- * Load the pattern lines (each of fixed length SEARCH_LINE_SIZE)
- * 
- * Search the source line looking for patterns, returning the number 
- * of instances of the pattern found (0 if not found)
- * 
- * For each pattern output a line to stdout of the format:
- * **,pattern,count\n
- * 
- * 
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "search.h" // include the search library
+#include "search.h" 
 
-// Function to compute the LPS array for KMP
+// Function to compute LPS array for KMP
 void computeLPSArray(char* pat, int m, int* lps) {
     int len = 0;
-    lps[0] = 0; // LPS[0] is always 0
+    lps[0] = 0;
     int i = 1;
     while (i < m) {
         if (pat[i] == pat[len]) {
@@ -39,29 +24,28 @@ void computeLPSArray(char* pat, int m, int* lps) {
     }
 }
 
-// Function to use KMP's LPS for candidate positions and then `Search` for verification
+// Function to use LPS for candidate positions then Search for verification
 int KMPInformedSearchCount(char* pat, char* txt) {
     int m = strlen(pat);
     int n = strlen(txt);
     int match_count = 0;
 
-    // Calculate the LPS array for the pattern
+    // Calculate LPS array
     int* lps = (int*)malloc(m * sizeof(int));
     computeLPSArray(pat, m, lps);
 
-    // Use Search iteratively to confirm each match and move to the next position after each match
     int start_pos = 0;
     while (start_pos <= n - m) {
-        // Search for the first occurrence of the pattern from the current start position
+        // Search for first occurrence of pattern from current start position
         int match_pos = Search(txt + start_pos, n - start_pos, pat, m, SEARCH_MODE_FIRST);
 
         if (match_pos == -1) {
             break;  // No more matches in this segment
         } else {
-            // A match is found; increment the match count
+            // Match found incrementmatch count
             match_count++;
 
-            // Update start position to move past the current match
+            // Update start position
             start_pos += match_pos + 1;
         }
     }
