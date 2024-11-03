@@ -40,6 +40,7 @@ ax.set_title("Context Switches - Method A, Pattern 1")
 ax.set_xlabel("Thread Count")
 ax.set_ylabel("Context Switches")
 ax.legend(loc='upper left')
+plt.savefig("Context Switches - Method A, Pattern 1.png")
 plt.show()
 
 # Method A, Pattern 2
@@ -53,6 +54,7 @@ ax.set_title("Context Switches - Method A, Pattern 2")
 ax.set_xlabel("Thread Count")
 ax.set_ylabel("Context Switches")
 ax.legend(loc='upper left')
+plt.savefig("Context Switches - Method A, Pattern 2.png")
 plt.show()
 
 # Method B, Pattern 1
@@ -66,6 +68,7 @@ ax.set_title("Context Switches - Method B, Pattern 1")
 ax.set_xlabel("Thread Count")
 ax.set_ylabel("Context Switches")
 ax.legend(loc='upper left')
+plt.savefig("Context Switches - Method B, Pattern 1.png")
 plt.show()
 
 # Method B, Pattern 2
@@ -79,4 +82,5 @@ ax.set_title("Context Switches - Method B, Pattern 2")
 ax.set_xlabel("Thread Count")
 ax.set_ylabel("Context Switches")
 ax.legend(loc='upper left')
+plt.savefig("Context Switches - Method B, Pattern 2.png")
 plt.show()
